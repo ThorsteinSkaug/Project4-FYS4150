@@ -11,4 +11,4 @@ The C++ source folder contains two files, one ```makefile``` and one file contai
 One can run the C++ code both with and without parallelization. To run without parallelization insert ```make unpar``` in the terminal window, to run with parallelization insert ```make par```.
 
 ## Plotting
-To plot the results from ```project4_main.cpp``` we need to run the ```plot.py``` file. 
+To plot the results from ```project4_main.cpp``` simply run the ```plot.py``` file. 
