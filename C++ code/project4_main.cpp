@@ -414,8 +414,8 @@ int main(){
     Tval2.push_back(tval);
   }
 
-  int n_cycles_ex8 = 300000;
-  int bit = 50000;
+  int n_cycles_ex8_2 = 300000;
+  int bit2 = 50000;
   for(int Lval = 40; Lval<120; Lval += 20){
     //Open file
     std::ofstream myfile;
@@ -430,18 +430,18 @@ int main(){
       double EE = 0., EM=0., EE2 = 0., EM2=0., e=0.;
 
       //Burn-in time
-      MCMC(Lval, Tval2[t], bit, EE, EM, EE2, EM2, lattice, e);
+      MCMC(Lval, Tval2[t], bit2, EE, EM, EE2, EM2, lattice, e);
 
       //Sampling after burn_in time
       EE = 0., EM=0., EE2 = 0., EM2=0., e=0.;
-      MCMC(Lval, Tval2[t], n_cycles_ex8, EE, EM, EE2, EM2, lattice, e);
+      MCMC(Lval, Tval2[t], n_cycles_ex8_2, EE, EM, EE2, EM2, lattice, e);
 
       //Calculate neccessary values
-      double C_v_T = C_v(Lval, Tval2[t], EE, EE2, n_cycles_ex8);
-      double chi_T = chi(Lval, Tval2[t], EM, EM2, n_cycles_ex8);
+      double C_v_T = C_v(Lval, Tval2[t], EE, EE2, n_cycles_ex8_2);
+      double chi_T = chi(Lval, Tval2[t], EM, EM2, n_cycles_ex8_2);
 
       //Write to file
-      myfile << std::scientific << Tval2[t] << " " << std::scientific << EE/N/n_cycles_ex8 << " " << std::scientific << EM/N/n_cycles_ex8 << " " << std::scientific << C_v_T << " " << std::scientific << chi_T << '\n';
+      myfile << std::scientific << Tval2[t] << " " << std::scientific << EE/N/n_cycles_ex8_2 << " " << std::scientific << EM/N/n_cycles_ex8_2 << " " << std::scientific << C_v_T << " " << std::scientific << chi_T << '\n';
     }
   }
 }
