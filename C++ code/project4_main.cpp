@@ -343,7 +343,7 @@ int main(){
 
   //Exercise 6
 
-  int burn_time = 25000; //Burn-in time as found in exercise 5
+  int burn_time = 5000; //Burn-in time as found in exercise 5
 
   //Timing tests:
   //Test without parallelization
