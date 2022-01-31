@@ -1,6 +1,6 @@
 # Project4-FYS4150
 
-This repository has four parts. One folder C++ files, containing all the necessary code for Markov Chain Monte Carlo for the Ising model and the makefile. One folder for all python files, containing the ```plot.py``` file with all the plot codes and some minor calculations. One folder containing all .txt files made from the C++ code. And finaly one folder containing all the plots.
+This repository has four parts. One folder C++ files, containing all the necessary code for Markov Chain Monte Carlo for the Ising model and the makefile. One folder for all python files, containing the ```plot.py``` file with all the plot codes and some minor calculations. One folder containing all .txt files made from the C++ code. And finally one folder containing all the plots.
 
 ## C++ code
 
